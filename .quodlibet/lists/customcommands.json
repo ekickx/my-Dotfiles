@@ -1,0 +1,42 @@
+{
+    "Fix MP3 VBR with mp3val": {
+        "name": "Fix MP3 VBR with mp3val", 
+        "pattern": "<~filename>", 
+        "max_args": 1, 
+        "command": "mp3val -f", 
+        "unique": true, 
+        "parameter": ""
+    }, 
+    "Compress files": {
+        "name": "Compress files", 
+        "pattern": "<~filename>", 
+        "max_args": 9999, 
+        "command": "file-roller -d", 
+        "unique": false, 
+        "parameter": ""
+    }, 
+    "Flash notification": {
+        "name": "Flash notification", 
+        "pattern": "<~rating> \"<title><version| (<version>)>\"<~people| by <~people>><album|, from <album><discnumber| : disk <discnumber>><~length| (<~length>)>", 
+        "max_args": 1, 
+        "command": "notify-send -t 2000 -i /usr/share/icons/hicolor/scalable/apps/quodlibet.svg", 
+        "unique": false, 
+        "parameter": ""
+    }, 
+    "Output playlist to stdout": {
+        "name": "Output playlist to stdout", 
+        "pattern": "<~playlistname>: <~playlistindex>.  <~artist~title>\\\\n", 
+        "max_args": 9999, 
+        "command": "echo -e", 
+        "unique": false, 
+        "parameter": ""
+    }, 
+    "Browse folders (Thunar)": {
+        "name": "Browse folders (Thunar)", 
+        "pattern": "<~dirname>", 
+        "max_args": 50, 
+        "command": "thunar", 
+        "unique": true, 
+        "parameter": ""
+    }
+}

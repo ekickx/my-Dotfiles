@@ -1,0 +1,1 @@
+alias pasang='apt install'

@@ -1,0 +1,3 @@
+~/.fehbg &
+clipman &
+tint2 &

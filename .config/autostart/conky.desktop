@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=sh "/home/rafif/.conky/conky-startup.sh"
+Hidden=true
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name=Conky
+Comment=
+

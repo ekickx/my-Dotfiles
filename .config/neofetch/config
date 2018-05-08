@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+#
+# Neofetch config file
+# https://github.com/dylanaraps/neofetch
+
+# Speed up script by not using unicode
+export LC_ALL=C
+export LANG=C
+
+# See this wiki page for more info:
+# https://github.com/dylanaraps/neofetch/wiki/Customizing-Info
+print_info() {
+    info title
+    info underline
+
+    info "OS" distro
+    info "Kernel" kernel
+    info "Shell" shell
+    info "WM" wm
+    info "WM Theme" wm_theme
+    info "CPU" cpu
+    info "GPU" gpu
+    info "Memory" memory
+
+    # info "CPU Usage" cpu_usage
+    # info "Disk" disk
+    # info "Battery" battery
+    # info "Font" font
+    # info "Song" song
+    # info "Local IP" local_ip
+    # info "Public IP" public_ip
+    # info "Users" users
+    # info "Birthday" birthday
+
+    info line_break
+    info cols
+    info line_break
+}
+
+# Image backend.
+#
+# Default:  'ascii'
+# Values:   'ascii', 'caca', 'catimg', 'jp2a', 'iterm2', 'off', 'tycat', 'w3m'
+# Flag:     --backend
+image_backend="off"
