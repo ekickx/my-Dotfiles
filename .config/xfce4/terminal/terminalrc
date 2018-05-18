@@ -1,10 +1,4 @@
 [Configuration]
-ColorForeground=#839496
-ColorBackground=#002b36
-ColorCursor=#93a1a1
-ColorBold=#9393a1a1a1a1
-ColorBoldUseDefault=FALSE
-ColorPalette=rgb(7,54,66);rgb(220,50,47);rgb(133,153,0);rgb(181,137,0);rgb(38,139,210);rgb(211,54,130);rgb(42,161,152);rgb(238,232,213);rgb(0,43,54);rgb(203,75,22);rgb(138,226,52);rgb(252,233,79);rgb(132,171,229);rgb(30,184,205);rgb(52,226,226);rgb(253,246,227)
 MiscAlwaysShowTabs=FALSE
 MiscBell=FALSE
 MiscBellUrgent=FALSE
@@ -29,6 +23,12 @@ MiscDefaultWorkingDir=
 MiscRewrapOnResize=TRUE
 MiscUseShiftArrowsToScroll=FALSE
 MiscSlimTabs=FALSE
-TabActivityColor=#dc322f
 BackgroundDarkness=0.730000
+ColorForeground=#839496
+ColorBackground=#002b36
+ColorPalette=rgb(7,54,66);rgb(220,50,47);rgb(133,153,0);rgb(181,137,0);rgb(38,139,210);rgb(211,54,130);rgb(38,139,210);rgb(238,232,213);rgb(0,43,54);rgb(237,141,141);rgb(181,137,0);rgb(101,123,131);rgb(86,235,49);rgb(108,113,196);rgb(42,161,152);rgb(253,246,227)
+ColorCursor=#93a1a1
+ColorBold=#93a1a1
+ColorBoldUseDefault=FALSE
+TabActivityColor=#dc322f
 

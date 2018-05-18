@@ -1,9 +1,9 @@
 {
-    "Fix MP3 VBR with mp3val": {
-        "name": "Fix MP3 VBR with mp3val", 
-        "pattern": "<~filename>", 
-        "max_args": 1, 
-        "command": "mp3val -f", 
+    "Browse folders (Thunar)": {
+        "name": "Browse folders (Thunar)", 
+        "pattern": "<~dirname>", 
+        "max_args": 50, 
+        "command": "thunar", 
         "unique": true, 
         "parameter": ""
     }, 
@@ -31,11 +31,11 @@
         "unique": false, 
         "parameter": ""
     }, 
-    "Browse folders (Thunar)": {
-        "name": "Browse folders (Thunar)", 
-        "pattern": "<~dirname>", 
-        "max_args": 50, 
-        "command": "thunar", 
+    "Fix MP3 VBR with mp3val": {
+        "name": "Fix MP3 VBR with mp3val", 
+        "pattern": "<~filename>", 
+        "max_args": 1, 
+        "command": "mp3val -f", 
         "unique": true, 
         "parameter": ""
     }

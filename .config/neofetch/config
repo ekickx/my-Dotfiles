@@ -10,21 +10,26 @@ export LANG=C
 # See this wiki page for more info:
 # https://github.com/dylanaraps/neofetch/wiki/Customizing-Info
 print_info() {
+    info line_break
     info title
     info underline
 
-    info "OS" distro
-    info "Kernel" kernel
-    info "Shell" shell
-    info "WM" wm
-    info "WM Theme" wm_theme
-    info "CPU" cpu
-    info "GPU" gpu
-    info "Memory" memory
+    info " Distro" distro
+    info " Memory" memory
+    # info "Kernel" kernel
+    info " Shell" shell
+    info " WM" wm
+    # info "WM Theme" wm_theme
+    info line_break
+    echo " $(tput bold) Gitlab: $(tput sgr0)gitlab.com/ekickx"
+    echo " $(tput bold) Github: $(tput sgr0)github.com/EkickX"
+    echo " $(tput bold) Facebook: $(tput sgr0)facebook.com/rafifsintech"
 
     # info "CPU Usage" cpu_usage
     # info "Disk" disk
-    # info "Battery" battery
+    # info " Battery" battery
+    # info " CPU" cpu
+    # info "GPU" gpu
     # info "Font" font
     # info "Song" song
     # info "Local IP" local_ip
@@ -34,6 +39,7 @@ print_info() {
 
     info line_break
     info cols
+    info line_break
     info line_break
 }
 

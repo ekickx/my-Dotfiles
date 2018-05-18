@@ -1,5 +1,5 @@
 favorites=google-chrome.desktop,exo-terminal-emulator.desktop,exo-file-manager.desktop,exo-mail-reader.desktop,exo-web-browser.desktop,jetbrains-pycharm-ce.desktop,simplescreenrecorder.desktop,alldeb-manager.desktop,quodlibet.desktop
-recent=gitkraken.desktop,OSU!.desktop,google-chrome.desktop,synaptic.desktop,uim.desktop,lightdm-gtk-greeter-settings.desktop,xfce4-taskmanager.desktop,telegramdesktop.desktop,chrome-apdfllckaahabafndbhieahigkjlhalf-Default.desktop,quodlibet.desktop
+recent=gitkraken.desktop,google-chrome.desktop,wicd.desktop,telegramdesktop.desktop,xfce-wm-settings.desktop,xfce-ui-settings.desktop,gcolor2.desktop,gucharmap.desktop,kbbi.desktop,Thunar.desktop
 button-title=Applications
 button-icon=xfce4-whiskermenu
 button-single-row=false

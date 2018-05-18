@@ -2,7 +2,7 @@
 windows = true
 
 [settings]
-columns = ~title~version,~#length,~album~discsubtitle,~people,~#track
+columns = ~title~version,~#length,~album~discsubtitle,~people,~rating
 	
 default_rating = 0.4
 ratings = 5
@@ -12,19 +12,93 @@ scan = /home/rafif/Videos/AMV:/home/rafif/Videos/Utaite:/home/rafif/Music/Playli
 [__config__]
 version = 0
 
+[memory]
+browser = Paned
+browser_panedbrowser_maximized = 0
+browser_panedbrowser_position = 296 213
+browser_panedbrowser_size_ = 600 400
+browser_playlistsbrowser_maximized = 4
+browser_playlistsbrowser_position = 0 0
+browser_playlistsbrowser_size_ = 600 400
+browser_searchbar_maximized = 0
+browser_searchbar_position = 0 0
+browser_searchbar_size_ = 600 400
+browser_soundcloudbrowser_maximized = 0
+browser_soundcloudbrowser_position = 300 160
+browser_soundcloudbrowser_size_ = 600 400
+column_expands = ~title~version,0,~album~discsubtitle,0,~people,0
+	
+column_widths = ~title~version,211,~album~discsubtitle,198,~people,191
+	
+open_browsers = 
+order = inorder
+order_shuffle = shuffle
+plugin_prefs_maximized = 0
+plugin_prefs_position = 465 106
+plugin_prefs_size_ = 700 545
+plugin_selection = Automatic Rating
+prefs_page = songlist
+queue = True
+queue_expanded = False
+queue_position = 0.665634674923
+quodlibet_information_maximized = 0
+quodlibet_information_position = 483 182
+quodlibet_information_size_ = 400 400
+quodlibet_last_active_version = 3.7.1
+quodlibet_maximized = 4
+quodlibet_position = -148 199
+quodlibet_properties_maximized = 0
+quodlibet_properties_pos = 0.400485436893
+quodlibet_properties_position = 479 183
+quodlibet_properties_size_single = 412 400
+quodlibet_size_ = 1366 713
+seek = 11451
+shuffle = False
+shufflequeue = false
+song = /home/rafif/Music/Playlist/Poppin_Party_-_Tokimeki_Experience_TV_size_BanG_Dream_OP_(mp3.pm).mp3
+sortby = 
+	
+volume = 0.200177187319
+
+[player]
+gst_buffer = 1.5
+replaygain = true
+
+[browsers]
+audiofeeds_pos = 0.399707174231
+cover_size = 2
+internetradio_pos = 0.4
+mediadevices_pos = 0.399707174231
+pane_selection = 0	Poppin'Party	.
+	1	.
+pane_wide_mode = false
+panedbrowser_pos = 0.398165137615
+playlist = 
+playlistsbrowser_pos = 0.405563689605
+query_text = pop
+soundcloud_pos = 0.4
+soundcloud_token = 1-180752-434581944-279acefb4ad31
+
 [plugins]
-active_plugins = Automatic Rating
+active_plugins = CustomCommands
 	Gajim status message
+	musicbrainz-cover
 	Picture Saver
-	Notify
-	CustomCommands
+	Download Album Art
+	lastfm-cover
+	Automatic Rating
+	artwork-url-cover
 animosd_align = 1
 animosd_coversize = 120
 animosd_font = Sans 12
 animosd_monitor = 0
 animosd_outline = -1.0 0.0 0.0
 animosd_shadow = -1.0 0.0 0.0 0.0
+cover_edit = False
+cover_edit_cmd = gimp
 cover_engine_amazon = True
+cover_fit = True
+cover_fn = cover.jpg
 icon_tooltip = <album|<album~discnumber~part~tracknumber~title~version>|<artist~title~version>>
 icon_window_visible = True
 notify_bodypattern = <~length>
@@ -44,65 +118,4 @@ theme switcher_prefer_dark = false
 theme switcher_theme = 
 titlecase_allow_all_caps = True
 titlecase_human_title_case = True
-
-[player]
-gst_buffer = 1.5
-replaygain = true
-
-[browsers]
-audiofeeds_pos = 0.399707174231
-cover_size = 2
-internetradio_pos = 0.4
-mediadevices_pos = 0.399707174231
-pane_selection = 0	.
-	0	.
-pane_wide_mode = false
-panedbrowser_pos = 0.398165137615
-playlist = Utaite
-playlistsbrowser_pos = 0.405563689605
-query_text = 
-soundcloud_pos = 0.4
-soundcloud_token = 1-180752-434581944-279acefb4ad31
-
-[memory]
-browser = SearchBar
-browser_playlistsbrowser_maximized = 4
-browser_playlistsbrowser_position = 0 0
-browser_playlistsbrowser_size_ = 600 400
-browser_searchbar_maximized = 0
-browser_searchbar_position = 0 0
-browser_searchbar_size_ = 600 400
-browser_soundcloudbrowser_maximized = 0
-browser_soundcloudbrowser_position = 300 160
-browser_soundcloudbrowser_size_ = 600 400
-column_expands = ~title~version,0,~album~discsubtitle,0,~people,1
-	
-column_widths = ~title~version,211,~album~discsubtitle,198,~people,-1
-	
-open_browsers = 
-order = inorder
-order_shuffle = shuffle
-plugin_prefs_maximized = 0
-plugin_prefs_position = 465 106
-plugin_prefs_size_ = 700 545
-plugin_selection = Notify
-prefs_page = library
-queue = False
-queue_expanded = True
-queue_position = 267.0
-quodlibet_last_active_version = 3.7.1
-quodlibet_maximized = 4
-quodlibet_position = -155 12
-quodlibet_properties_maximized = 0
-quodlibet_properties_pos = 0.399509803922
-quodlibet_properties_position = 479 183
-quodlibet_properties_size_single = 408 400
-quodlibet_size_ = 1366 713
-seek = 236022
-shuffle = False
-shufflequeue = false
-song = /home/rafif/Music/Playlist/Poppin_Party_-_STAR_BEAT_Hoshi_no_Kodou_(DemoLat.com).mp3
-sortby = 0~#track
-	
-volume = 0.00761416276147
 

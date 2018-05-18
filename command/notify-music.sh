@@ -21,8 +21,6 @@
 # 		mv "$(echo "`(quodlibet --print-playing "<title>")`.png")" ~/.quodlibet/art/
 # fi
 
-pkill n30f
-
 if [ -e ~/.quodlibet/current ]
 then
 	notify-send "$(echo -e "$(quodlibet --print-playing "<title>")\n$(quodlibet --print-playing "<artist|<artist>|Unknown Artist>")")" "$(quodlibet --print-playing "<~rating>")" 
