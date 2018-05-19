@@ -7,7 +7,7 @@
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -61,6 +61,7 @@ ZSH_THEME="agnoster"
 plugins=(
   git
 )
+plugins=(zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -105,4 +106,11 @@ plugins=(
   rbenv
   ruby
 )
+
+#powerleve9kSetting
+#POWERLEVEL9K_CONTEXT_TEMPLATE="%n"
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status dir virtualenv pyenv vcs background_jobs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
+POWERLEVEL9K_SHORTEN_STRATEGY="truncate_middle"
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
 
