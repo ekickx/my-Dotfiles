@@ -96,6 +96,9 @@ source $ZSH/oh-my-zsh.sh
 alias sudo="sudo "
 alias pasang="apt install"
 alias hapus="apt remove"
+alias tog="quodlibet --play-pause"
+alias next="quodlibet --next"
+alias prev="quodlibet --previous"
 
 plugins=(
   git
@@ -114,3 +117,5 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
 POWERLEVEL9K_SHORTEN_STRATEGY="truncate_middle"
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
 
+#zsh-autosuggestionsSetting
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=10'
