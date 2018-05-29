@@ -1,7 +1,7 @@
-favorites=google-chrome.desktop,exo-terminal-emulator.desktop,exo-file-manager.desktop,exo-mail-reader.desktop,exo-web-browser.desktop,jetbrains-pycharm-ce.desktop,simplescreenrecorder.desktop,alldeb-manager.desktop,quodlibet.desktop
-recent=gitkraken.desktop,google-chrome.desktop,wicd.desktop,telegramdesktop.desktop,xfce-wm-settings.desktop,xfce-ui-settings.desktop,gcolor2.desktop,gucharmap.desktop,kbbi.desktop,Thunar.desktop
+favorites=google-chrome.desktop,exo-terminal-emulator.desktop,exo-file-manager.desktop,exo-mail-reader.desktop,jetbrains-pycharm-ce.desktop,alldeb-manager.desktop
+recent=xfce-wm-settings.desktop,google-chrome.desktop,quodlibet.desktop,godot-engine-4.desktop,system-config-printer.desktop,chrome-eablgejicbklomgaiclcolfilbkckngf-Default.desktop,chrome-dnacabmnfmejgfffmcehejcmiciinpej-Default.desktop,xfce4-taskmanager.desktop,lutris.desktop,synaptic.desktop
 button-title=Applications
-button-icon=xfce4-whiskermenu
+button-icon=application-menu
 button-single-row=false
 show-button-title=false
 show-button-icon=true

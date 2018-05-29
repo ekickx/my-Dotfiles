@@ -133,10 +133,10 @@
          id="rect"
          style="fill:blue;"
          usecurrent="1"
-         width="1731.43"
-         height="405.714"
+         width="364.867"
+         height="364.867"
          rx="0"
-         ry="56.5685" />
+         ry="0" />
       <eventcontext
          id="3dbox"
          style="stroke:none;stroke-linejoin:round;"
@@ -334,7 +334,7 @@
        gradientdrag="1"
        font_sample="AaBbCcIiPpQq12369$€¢?.;/()"
        show_sample_in_list="1"
-       style="fill:black;fill-opacity:1;stroke:none;font-family:monospace;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:monospace;font-stretch:normal;font-variant:normal"
+       style="fill:black;fill-opacity:1;stroke:none;font-family:FontAwesome;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:FontAwesome;font-stretch:normal;font-variant:normal"
        selcue="1"
        align_mode="1">
       <group
@@ -580,11 +580,11 @@
        page="0"
        x="0"
        y="0"
-       w="1"
-       h="1"
-       visible="1"
+       w="359"
+       h="467"
+       visible="0"
        state="2"
-       placement="5" />
+       placement="1" />
     <group
        id="filtereffects"
        panel_size="1"
@@ -613,8 +613,8 @@
        panel_border="0"
        x="0"
        y="0"
-       w="1"
-       h="1"
+       w="352"
+       h="467"
        visible="1"
        state="2"
        placement="5"
@@ -684,8 +684,8 @@
        panel_border="0"
        x="0"
        y="0"
-       w="1"
-       h="1"
+       w="352"
+       h="467"
        visible="1"
        state="2"
        placement="5">
@@ -712,14 +712,14 @@
     <group
        id="open"
        enable_preview="1"
-       path="/home/rafif/Project/Isco sertif/" />
+       path="/home/rafif/Pictures/Screenshot/" />
     <group
        id="import"
        enable_preview="1"
        path="/home/rafif/Pictures/Screenshot/"
        ask="1"
        link="embed"
-       scale="auto"
+       scale="optimizeQuality"
        forcexdpi="0" />
     <group
        id="debug"
@@ -753,8 +753,8 @@
        panel_border="0"
        x="0"
        y="0"
-       w="1"
-       h="1"
+       w="352"
+       h="467"
        visible="1"
        state="2"
        placement="5" />
@@ -786,7 +786,8 @@
        add-label-comments="0" />
   </group>
   <group
-     id="options">
+     id="options"
+     dpifixbackup="1">
     <group
        id="renderingcache"
        size="64" />
@@ -1063,7 +1064,7 @@
   </group>
   <group
      id="extensions"
-     org.inkscape.input.gdkpixbuf.png.link="link"
+     org.inkscape.input.gdkpixbuf.png.link="embed"
      org.inkscape.input.gdkpixbuf.jpg.link="link"
      org.inkscape.input.gdkpixbuf.jpg.scale="optimizeQuality"
      org.inkscape.input.gdkpixbuf.png.scale="optimizeQuality"
@@ -1096,12 +1097,12 @@
      org.inkscape.effect.filter.Colorize.__live_effect__="0" />
   <group
      id="desktop"
-     style="line-height:1.25;stroke:none;stroke-width:0.7;stroke-miterlimit:4;stroke-dasharray:none;stroke-linejoin:miter;stroke-linecap:butt;stroke-dashoffset:0;stroke-opacity:1;fill-opacity:1;font-size:48px;opacity:1;fill:#ffffff;-inkscape-font-specification:NanumBarunGothic;font-family:NanumBarunGothic;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-east_asian:normal;vector-effect:none;fill-rule:nonzero;text-anchor:middle;text-align:center">
+     style="line-height:1.25;stroke:none;stroke-width:0.7;stroke-miterlimit:4;stroke-dasharray:none;stroke-linejoin:miter;stroke-linecap:butt;stroke-dashoffset:0;stroke-opacity:1;fill-opacity:1;font-size:48px;opacity:0.423;fill:#bac3cf;-inkscape-font-specification:Japan;font-family:Japan;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-east_asian:normal;vector-effect:none;fill-rule:nonzero;text-anchor:middle;text-align:center">
     <group
        width="793"
        height="480"
        x="0"
-       y="31"
+       y="0"
        fullscreen="0"
        id="geometry"
        maximized="1" />

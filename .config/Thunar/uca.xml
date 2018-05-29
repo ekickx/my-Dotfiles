@@ -11,37 +11,29 @@
 	<directories/>
 </action>
 <action>
-	<icon>text-editor</icon>
+	<icon>accessories-text-editor</icon>
 	<name>Edit as Root</name>
-	<unique-id>1521946272465255-7</unique-id>
+	<unique-id>1527603725575654-2</unique-id>
 	<command>gksu mousepad %f</command>
 	<description></description>
 	<patterns>*</patterns>
+	<other-files/>
 	<text-files/>
 </action>
 <action>
-	<icon>file-manager</icon>
+	<icon>system-file-manager</icon>
 	<name>Open as Root</name>
-	<unique-id>1521946298034334-8</unique-id>
+	<unique-id>1527518764211403-1</unique-id>
 	<command>gksu thunar %f</command>
 	<description></description>
 	<patterns>*</patterns>
 	<directories/>
 </action>
 <action>
-	<icon>preferences-system-search</icon>
+	<icon>plasma-search</icon>
 	<name>Search..</name>
-	<unique-id>1521946195932717-6</unique-id>
+	<unique-id>1527519013932101-5</unique-id>
 	<command>catfish --path=%f</command>
-	<description></description>
-	<patterns>*</patterns>
-	<directories/>
-</action>
-<action>
-	<icon>search</icon>
-	<name>Search Inside..</name>
-	<unique-id>1521946183831445-4</unique-id>
-	<command>catfish --path=%f%d</command>
 	<description></description>
 	<patterns>*</patterns>
 	<directories/>
