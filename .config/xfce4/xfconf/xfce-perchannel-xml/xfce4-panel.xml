@@ -11,10 +11,15 @@
       <property name="size" type="uint" value="27"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="16"/>
-        <value type="int" value="2"/>
+        <value type="int" value="14"/>
+        <value type="int" value="17"/>
         <value type="int" value="1"/>
-        <value type="int" value="6"/>
+        <value type="int" value="11"/>
+        <value type="int" value="12"/>
+        <value type="int" value="5"/>
+        <value type="int" value="13"/>
         <value type="int" value="3"/>
+        <value type="int" value="6"/>
         <value type="int" value="9"/>
         <value type="int" value="7"/>
         <value type="int" value="8"/>
@@ -44,41 +49,41 @@
     </property>
     <property name="plugin-6" type="string" value="systray">
       <property name="names-visible" type="array">
-        <value type="string" value="discord"/>
         <value type="string" value="task manager"/>
         <value type="string" value="clipman"/>
-        <value type="string" value="deluge"/>
-        <value type="string" value="steam"/>
         <value type="string" value="ibus-ui-gtk3"/>
         <value type="string" value="scp-dbus-service.py"/>
         <value type="string" value="clipit"/>
-        <value type="string" value="orage"/>
         <value type="string" value="quod libet"/>
         <value type="string" value="wicd-client.py"/>
-        <value type="string" value="vlc"/>
         <value type="string" value="xfce4-power-manager"/>
         <value type="string" value="volumeicon"/>
         <value type="string" value="thunar"/>
         <value type="string" value="vokoscreen"/>
         <value type="string" value="docky"/>
         <value type="string" value="klipper"/>
-        <value type="string" value="google-chrome"/>
-        <value type="string" value="google-chrome-stable"/>
         <value type="string" value="simplescreenrecorder"/>
         <value type="string" value="plasmawindowed"/>
-        <value type="string" value="sylpheed"/>
-        <value type="string" value="blueman-applet"/>
-        <value type="string" value="nextcloud"/>
-        <value type="string" value="telegram"/>
         <value type="string" value="notes"/>
-        <value type="string" value="goldendict"/>
+        <value type="string" value="blueman-applet"/>
       </property>
       <property name="names-hidden" type="array">
-        <value type="string" value="networkmanager applet"/>
-        <value type="string" value="ibus panel"/>
+        <value type="string" value="discord"/>
+        <value type="string" value="deluge"/>
+        <value type="string" value="steam"/>
+        <value type="string" value="orage"/>
+        <value type="string" value="vlc"/>
         <value type="string" value="teamviewer"/>
+        <value type="string" value="google-chrome"/>
+        <value type="string" value="google-chrome-stable"/>
+        <value type="string" value="sylpheed"/>
+        <value type="string" value="networkmanager applet"/>
+        <value type="string" value="nextcloud"/>
+        <value type="string" value="telegram"/>
+        <value type="string" value="ibus panel"/>
+        <value type="string" value="goldendict"/>
       </property>
-      <property name="show-frame" type="bool" value="false"/>
+      <property name="show-frame" type="bool" value="true"/>
     </property>
     <property name="plugin-16" type="string" value="whiskermenu"/>
     <property name="plugin-7" type="string" value="battery"/>
@@ -107,9 +112,40 @@
       <property name="expand" type="bool" value="true"/>
       <property name="style" type="uint" value="1"/>
     </property>
-    <property name="plugin-2" type="string" value="tasklist">
-      <property name="grouping" type="uint" value="1"/>
-    </property>
     <property name="plugin-9" type="string" value="power-manager-plugin"/>
+    <property name="plugin-5" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15277795891.desktop"/>
+      </property>
+      <property name="show-label" type="bool" value="false"/>
+      <property name="move-first" type="bool" value="false"/>
+      <property name="arrow-position" type="uint" value="0"/>
+      <property name="disable-tooltips" type="bool" value="true"/>
+    </property>
+    <property name="plugin-11" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15277801725.desktop"/>
+      </property>
+      <property name="disable-tooltips" type="bool" value="true"/>
+    </property>
+    <property name="plugin-12" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15277800864.desktop"/>
+      </property>
+      <property name="disable-tooltips" type="bool" value="true"/>
+    </property>
+    <property name="plugin-13" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15277800183.desktop"/>
+      </property>
+      <property name="disable-tooltips" type="bool" value="true"/>
+    </property>
+    <property name="plugin-14" type="string" value="dockbarx">
+      <property name="orient" type="string" value="bottom"/>
+      <property name="block-autohide" type="bool" value="false"/>
+      <property name="mode" type="int" value="2"/>
+      <property name="color" type="string" value="#2b2b2e2e3737"/>
+    </property>
+    <property name="plugin-17" type="string" value="windowck-plugin"/>
   </property>
 </channel>

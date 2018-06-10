@@ -85,6 +85,40 @@
           <property name="last-image" type="string" value="/home/rafif/.conky/Frozen Cherry Desktop/wallpaper.jpg"/>
         </property>
         <property name="image-style" type="int" value="0"/>
+        <property name="workspace4" type="empty">
+          <property name="color-style" type="int" value="1"/>
+          <property name="color1" type="array">
+            <value type="uint" value="7936"/>
+            <value type="uint" value="16128"/>
+            <value type="uint" value="28416"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="color2" type="array">
+            <value type="uint" value="26880"/>
+            <value type="uint" value="34048"/>
+            <value type="uint" value="46848"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="image-style" type="int" value="3"/>
+          <property name="last-image" type="string" value="/home/rafif/Pictures/Anime/BangDream/edited.png"/>
+        </property>
+        <property name="workspace5" type="empty">
+          <property name="color-style" type="int" value="1"/>
+          <property name="color1" type="array">
+            <value type="uint" value="7936"/>
+            <value type="uint" value="16128"/>
+            <value type="uint" value="28416"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="color2" type="array">
+            <value type="uint" value="26880"/>
+            <value type="uint" value="34048"/>
+            <value type="uint" value="46848"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="image-style" type="int" value="3"/>
+          <property name="last-image" type="string" value="/home/rafif/Pictures/Anime/BangDream/edited.png"/>
+        </property>
       </property>
       <property name="monitor1" type="empty">
         <property name="brightness" type="empty"/>

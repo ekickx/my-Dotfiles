@@ -16,5 +16,5 @@ colorH=rgb(0,255,0)
 colorL=rgb(255,255,0)
 colorC=rgb(255,0,0)
 command_on_low=
-command_on_critical=gksu bash /home/rafif/.battery_monitor.sh
+command_on_critical=gksu bash /home/rafif/.commands/battery_monitor.sh
 

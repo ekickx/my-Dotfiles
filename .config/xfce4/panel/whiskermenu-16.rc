@@ -1,5 +1,5 @@
 favorites=google-chrome.desktop,exo-terminal-emulator.desktop,exo-file-manager.desktop,exo-mail-reader.desktop,jetbrains-pycharm-ce.desktop,alldeb-manager.desktop
-recent=xfce-wm-settings.desktop,google-chrome.desktop,quodlibet.desktop,godot-engine-4.desktop,system-config-printer.desktop,chrome-eablgejicbklomgaiclcolfilbkckngf-Default.desktop,chrome-dnacabmnfmejgfffmcehejcmiciinpej-Default.desktop,xfce4-taskmanager.desktop,lutris.desktop,synaptic.desktop
+recent=gitkraken.desktop,google-chrome.desktop,org.gimp.GIMP.desktop,sublime_text.desktop,gcolor2.desktop,inkscape.desktop,xampp-control-panel.desktop,telegramdesktop.desktop,jetbrains-pycharm-ce.desktop,godot-engine2.desktop
 button-title=Applications
 button-icon=application-menu
 button-single-row=false
@@ -18,8 +18,8 @@ display-recent-default=false
 position-search-alternate=false
 position-commands-alternate=false
 position-categories-alternate=false
-menu-width=415
-menu-height=546
+menu-width=386
+menu-height=504
 menu-opacity=100
 command-settings=xfce4-settings-manager
 show-command-settings=true

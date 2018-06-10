@@ -133,8 +133,8 @@
          id="rect"
          style="fill:blue;"
          usecurrent="1"
-         width="364.867"
-         height="364.867"
+         width="18"
+         height="9"
          rx="0"
          ry="0" />
       <eventcontext
@@ -326,7 +326,7 @@
        id="lpetool"
        mode="drag"
        style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;"
-       unit="mm"
+       unit="px"
        show_bbox="1" />
     <eventcontext
        id="text"
@@ -334,7 +334,7 @@
        gradientdrag="1"
        font_sample="AaBbCcIiPpQq12369$€¢?.;/()"
        show_sample_in_list="1"
-       style="fill:black;fill-opacity:1;stroke:none;font-family:FontAwesome;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:FontAwesome;font-stretch:normal;font-variant:normal"
+       style="fill:black;fill-opacity:1;stroke:none;font-family:FontAwesome;font-style:normal;font-weight:normal;font-size:8px;line-height:1.25;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:FontAwesome;font-stretch:normal;font-variant:normal"
        selcue="1"
        align_mode="1">
       <group
@@ -428,7 +428,7 @@
        offset="0"
        offsetunits="cm" />
     <group
-       unit="mm"
+       unit="px"
        offset="5"
        scale="100"
        precision="2"
@@ -554,7 +554,7 @@
   </group>
   <group
      id="colorselector"
-     page="3" />
+     page="4" />
   <group
      id="embedded">
     <group
@@ -580,9 +580,9 @@
        page="0"
        x="0"
        y="0"
-       w="359"
-       h="467"
-       visible="0"
+       w="350"
+       h="381"
+       visible="1"
        state="2"
        placement="1" />
     <group
@@ -613,11 +613,11 @@
        panel_border="0"
        x="0"
        y="0"
-       w="352"
-       h="467"
+       w="1"
+       h="1"
        visible="1"
-       state="2"
-       placement="5"
+       state="3"
+       placement="1"
        align-to="0" />
     <group
        id="xml" />
@@ -637,10 +637,10 @@
        panel_mode="1"
        panel_wrap="0"
        panel_border="0"
-       x="765"
+       x="769"
        y="0"
-       w="597"
-       h="860"
+       w="593"
+       h="730"
        visible="0"
        placement="1" />
     <group
@@ -651,7 +651,7 @@
        panel_mode="1"
        panel_wrap="0"
        panel_border="0"
-       page="23"
+       page="26"
        x="259"
        y="81"
        w="847"
@@ -684,14 +684,14 @@
        panel_border="0"
        x="0"
        y="0"
-       w="352"
-       h="467"
+       w="350"
+       h="424"
        visible="1"
        state="2"
-       placement="5">
+       placement="2">
       <group
          id="exportarea"
-         value="page" />
+         value="drawing" />
       <group
          id="defaultxdpi"
          value="145.67" />
@@ -712,11 +712,11 @@
     <group
        id="open"
        enable_preview="1"
-       path="/home/rafif/Pictures/Screenshot/" />
+       path="/usr/share/inkscape/examples/" />
     <group
        id="import"
        enable_preview="1"
-       path="/home/rafif/Pictures/Screenshot/"
+       path="/home/rafif/Public/"
        ask="1"
        link="embed"
        scale="optimizeQuality"
@@ -754,10 +754,10 @@
        x="0"
        y="0"
        w="352"
-       h="467"
-       visible="1"
+       h="150"
+       visible="0"
        state="2"
-       placement="5" />
+       placement="1" />
     <group
        id="extensioneditor" />
     <group
@@ -1097,12 +1097,12 @@
      org.inkscape.effect.filter.Colorize.__live_effect__="0" />
   <group
      id="desktop"
-     style="line-height:1.25;stroke:none;stroke-width:0.7;stroke-miterlimit:4;stroke-dasharray:none;stroke-linejoin:miter;stroke-linecap:butt;stroke-dashoffset:0;stroke-opacity:1;fill-opacity:1;font-size:48px;opacity:0.423;fill:#bac3cf;-inkscape-font-specification:Japan;font-family:Japan;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-east_asian:normal;vector-effect:none;fill-rule:nonzero;text-anchor:middle;text-align:center">
+     style="line-height:1.25;stroke:#a5ecff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-linejoin:miter;stroke-linecap:butt;stroke-dashoffset:0;stroke-opacity:1;fill-opacity:1;font-size:8px;opacity:1;fill:#a5ecff;-inkscape-font-specification:Japan;font-family:Japan;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-east_asian:normal;vector-effect:none;fill-rule:nonzero;text-anchor:middle;text-align:center">
     <group
-       width="793"
-       height="480"
-       x="0"
-       y="0"
+       width="1036"
+       height="653"
+       x="198"
+       y="25"
        fullscreen="0"
        id="geometry"
        maximized="1" />

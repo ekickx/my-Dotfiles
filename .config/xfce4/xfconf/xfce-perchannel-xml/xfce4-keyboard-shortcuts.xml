@@ -59,6 +59,7 @@
         <property name="startup-notify" type="bool" value="true"/>
       </property>
       <property name="&lt;Primary&gt;&lt;Alt&gt;m" type="string" value="bash /home/rafif/.commands/notify-music.sh"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;s" type="string" value="bash /home/rafif/.commands/center.sh"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

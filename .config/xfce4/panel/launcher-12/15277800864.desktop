@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=play
+Comment=
+Exec=bash /home/rafif/.commands/start.sh
+Icon=media-playback-start
+Path=
+Terminal=false
+StartupNotify=false
