@@ -1,4 +1,2 @@
 [submodule ".oh-my-zsh/custom/themes/powerlevel9k"]
 	url = https://github.com/bhilburn/powerlevel9k.git
-[submodule ".oh-my-zsh/custom/plugins/zsh-autosuggestions"]
-	url = https://github.com/zsh-users/zsh-autosuggestions.git 
