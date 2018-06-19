@@ -2,7 +2,7 @@
 
 Basically, I manage this repo for my dotfiles and config backup but I would love to share this config for you too 
 
-![]()
+![5b287c73a5cb1](https://i.loli.net/2018/06/19/5b287c73a5cb1.png)
 
 ## What I Use in My Setup
 
