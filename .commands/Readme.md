@@ -52,7 +52,7 @@ After that make hotkey to trigger this script
 
 Script to take a screenshot with notification
 
-###How to use
+### How to use
 
 Install `scrot` and `fontawesome`
 
