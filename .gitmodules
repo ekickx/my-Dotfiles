@@ -4,3 +4,12 @@
 [submodule ".oh-my-zsh/custom/themes/powerlevel9k"]
 	path = .oh-my-zsh/custom/themes/powerlevel9k
 	url = https://github.com/bhilburn/powerlevel9k
+[submodule ".tmux"]
+	path = .tmux
+	url = https://github.com/gpakosz/.tmux
+[submodule ".config/mpv/scripts/mpv-playlistmanager"]
+	path = .config/mpv/scripts/mpv-playlistmanager
+	url = https://github.com/jonniek/mpv-playlistmanager
+[submodule ".config/mpv/scripts/mpv-nextfile"]
+	path = .config/mpv/scripts/mpv-nextfile
+	url = https://github.com/jonniek/mpv-nextfile
