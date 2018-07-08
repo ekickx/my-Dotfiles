@@ -4,6 +4,7 @@
 # Path to your oh-my-zsh installation.
   export ZSH=/home/rafif/.oh-my-zsh
 
+  export TERM=xterm-256color
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
@@ -59,9 +60,9 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
+  git zsh-autosuggestions zsh-completions
 )
-plugins=(zsh-autosuggestions)
+autoload -U compinit && compinit
 
 source $ZSH/oh-my-zsh.sh
 
@@ -99,6 +100,11 @@ alias hapus="apt remove"
 alias tog="quodlibet --play-pause"
 alias next="quodlibet --next"
 alias prev="quodlibet --previous"
+alias gaywd="bash ~/.commands/gaywd.sh"
+alias perbarui="sudo apt update"
+alias tingkatkan="sudo apt upgrade"
+alias list-list="npm list -g --depth=0"
+
 
 plugins=(
   git
