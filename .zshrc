@@ -8,6 +8,7 @@
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+POWERLEVEL9K_MODE='awesome-fontconfig'
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Set list of themes to load
@@ -118,7 +119,7 @@ plugins=(
 
 #powerleve9kSetting
 #POWERLEVEL9K_CONTEXT_TEMPLATE="%n"
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status dir virtualenv pyenv vcs background_jobs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir virtualenv pyenv vcs newline background_jobs status)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
 POWERLEVEL9K_SHORTEN_STRATEGY="truncate_middle"
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
