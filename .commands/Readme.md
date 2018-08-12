@@ -36,7 +36,7 @@ Install `quodlibet` and `n30f`
 sudo apt install quodlibet
 ```
 
-And for  `n30f` installition you can see [this repository](github.com)
+And for  `n30f` installition you can see [this repository](https://github.com/sdhand/n30f)
 
 Not least, you must activate plugin in quodlibet
 
@@ -60,8 +60,9 @@ Install `scrot` and `fontawesome`
 sudo apt install scrot
 ```
 
-To install fontawesome go to this [website](fontawesome).
+To install fontawesome go to this [website](https://fontawesome.com/).
 
 The last make hotkey to take screenshot
 
-##
+## Tmux-Session
+This script is for save and restore tmux sessions. This script isn't my own. I get it from [here](https://github.com/mislav/dotfiles/blob/d2af5900fce38238d1202aa43e7332b20add6205/bin/tmux-session)
