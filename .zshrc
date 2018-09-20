@@ -1,15 +1,19 @@
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/rafif/.oh-my-zsh
+export ZSH=/home/rafif/.oh-my-zsh
 
-  export TERM=xterm-256color
-# Set name of the theme to load. Optionally, if you set this to "random"
+export TERM=st-256color # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
+
+cat ~/.cache/wal/sequences
+
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 POWERLEVEL9K_MODE='awesome-fontconfig'
 ZSH_THEME="powerlevel9k/powerlevel9k"
+POWERLEVEL9K_LINUX_ICON=""
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -96,16 +100,16 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias sudo="sudo "
-alias pasang="apt install"
-alias hapus="apt remove"
+alias pasang="aptitude install"
+alias hapus="aptitude remove"
 alias tog="quodlibet --play-pause"
 alias next="quodlibet --next"
 alias prev="quodlibet --previous"
-alias gaywd="bash ~/.commands/gaywd.sh"
-alias perbarui="sudo apt update"
-alias tingkatkan="sudo apt upgrade"
+alias perbarui="sudo aptitude update"
+alias tingkatkan="sudo aptitude safe-upgrade"
 alias list-list="npm list -g --depth=0"
-
+alias grview="/home/rafif/APP/grv/grv -repoFilePath"
+alias infoapps="aptitude show"
 
 plugins=(
   git
@@ -119,10 +123,22 @@ plugins=(
 
 #powerleve9kSetting
 #POWERLEVEL9K_CONTEXT_TEMPLATE="%n"
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir virtualenv pyenv vcs newline background_jobs status)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
+POWERLEVEL9K_USER_BACKGROUND="71A1D0"
+POWERLEVEL9K_PROMPT_ON_NEWLINE="FALSE"
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir dir_writable virtualenv pyenv vcs newline status)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(background_jobs)
+POWERLEVEL9K_STATUS_VERBOSE=false
 POWERLEVEL9K_SHORTEN_STRATEGY="truncate_middle"
-POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=4
+POWERLEVEL9K_HOME_ICON=" "
+POWERLEVEL9K_HOME_SUB_ICON=" "
+POWERLEVEL9K_FOLDER_ICON=" "
 
 #zsh-autosuggestionsSetting
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=10'
+
+
+
+#path
+export PATH=$PATH":/home/rafif/.commands"
+export PATH=$PATH":$HOME/.local/bin"
