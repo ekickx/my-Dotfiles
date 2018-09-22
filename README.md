@@ -10,6 +10,9 @@ Basically, I manage this repo for my dotfiles and config backup but I would love
 ## Qunituple Band
 ![](https://img00.deviantart.net/da8d/i/2018/224/8/3/quintuple_band_by_ekickx-dcjx67o.png)
 
+## Retro on Debian
+![](https://orig00.deviantart.net/ef46/f/2018/265/9/6/retro_on_debian_by_ekickx-dcni65g.png)
+
 
 
 
