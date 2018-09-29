@@ -13,7 +13,8 @@ cat ~/.cache/wal/sequences
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 POWERLEVEL9K_MODE='awesome-fontconfig'
 ZSH_THEME="powerlevel9k/powerlevel9k"
-POWERLEVEL9K_LINUX_ICON=""
+config="/home/rafif/.config/ohmyzsh/numberOne"
+source $config
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -84,6 +85,10 @@ source $ZSH/oh-my-zsh.sh
 # else
 #   export EDITOR='mvim'
 # fi
+if command -v tmux>/dev/null; then
+  [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux
+fi
+
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -120,19 +125,6 @@ plugins=(
   rbenv
   ruby
 )
-
-#powerleve9kSetting
-#POWERLEVEL9K_CONTEXT_TEMPLATE="%n"
-POWERLEVEL9K_USER_BACKGROUND="71A1D0"
-POWERLEVEL9K_PROMPT_ON_NEWLINE="FALSE"
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir dir_writable virtualenv pyenv vcs newline status)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(background_jobs)
-POWERLEVEL9K_STATUS_VERBOSE=false
-POWERLEVEL9K_SHORTEN_STRATEGY="truncate_middle"
-POWERLEVEL9K_SHORTEN_DIR_LENGTH=4
-POWERLEVEL9K_HOME_ICON=" "
-POWERLEVEL9K_HOME_SUB_ICON=" "
-POWERLEVEL9K_FOLDER_ICON=" "
 
 #zsh-autosuggestionsSetting
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=10'
