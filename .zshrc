@@ -11,7 +11,6 @@ export TERM=st-256color # Set name of the theme to load. Optionally, if you set 
 cat ~/.cache/wal/sequences
 
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-POWERLEVEL9K_MODE='awesome-fontconfig'
 ZSH_THEME="powerlevel9k/powerlevel9k"
 config="/home/rafif/.config/ohmyzsh/numberOne"
 source $config
@@ -115,6 +114,7 @@ alias tingkatkan="sudo aptitude safe-upgrade"
 alias list-list="npm list -g --depth=0"
 alias grview="/home/rafif/APP/grv/grv -repoFilePath"
 alias infoapps="aptitude show"
+alias cls="colorls"
 
 plugins=(
   git
