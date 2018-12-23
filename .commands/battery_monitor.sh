@@ -1,18 +1,21 @@
 #!/bin/bash
-BATTINFO=`acpi -b`
-CRITICAL_PERCENTAGE=10
-LOW_PERCENTAGE=20
-# FILE_LOCATION="/home/rafif/LOW_BATTERY" #change this to correct username!
+CRITICAL_PERCENTAGE=15
+LOW_PERCENTAGE=25
 
-while [[ `echo $BATTINFO | grep Discharging` && `echo $BATTINFO | cut -c 25-26 ` -gt $CRITICAL_PERCENTAGE ]]
+while true
 do
+ BATTINFO=`acpi -b`
 	if [[ `echo $BATTINFO | grep Discharging` && `echo $BATTINFO | cut -c 25-26 ` -lt $LOW_PERCENTAGE ]]
 	then
-		# echo `date` >> $FILE_LOCATION 
-		# echo "Was forced to hibernate, due to low battery status">>$FILE_LOCATION       
-		# echo $BATTINFO >> $FILE_LOCATION
-		# echo " " >> $FILE_LOCATION
-		sudo shutdown now 
+		notify-send "Warning" "Your PC is running on Low Power"
 	fi
-	BATTINFO=`acpi -b`
+if [[ `echo $BATTINFO | grep Discharging` && `echo $BATTINFO | cut -c 25-26 ` -lt $CRITICAL_PERCENTAGE ]]
+  then
+    systemctl suspend
+fi
+  if [[ `echo $BATTINFO | grep Full` ]]
+  then
+    notify-send "Your Power is Full"
+  fi
+sleep 270
 done

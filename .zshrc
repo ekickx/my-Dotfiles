@@ -3,7 +3,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/home/rafif/.oh-my-zsh
+export ZSH=/home/ekickx/.oh-my-zsh
 
 export TERM=st-256color # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -12,7 +12,7 @@ cat ~/.cache/wal/sequences
 
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="powerlevel9k/powerlevel9k"
-config="/home/rafif/.config/ohmyzsh/numberOne"
+config="$HOME/.config/ohmyzsh/numberOne"
 source $config
 
 # Set list of themes to load
@@ -112,7 +112,7 @@ alias prev="quodlibet --previous"
 alias perbarui="sudo aptitude update"
 alias tingkatkan="sudo aptitude safe-upgrade"
 alias list-list="npm list -g --depth=0"
-alias grview="/home/rafif/APP/grv/grv -repoFilePath"
+alias grview="$HOME/APP/grv/grv -repoFilePath"
 alias infoapps="aptitude show"
 alias cls="colorls"
 
@@ -132,5 +132,5 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=10'
 
 
 #path
-export PATH=$PATH":/home/rafif/.commands"
+export PATH=$PATH":$HOME/.commands"
 export PATH=$PATH":$HOME/.local/bin"

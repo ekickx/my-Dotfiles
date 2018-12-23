@@ -20,9 +20,9 @@ function send_notification {
     bar=$(seq -s "─" $(($volume / 4)) | sed 's/[0-9]//g')
     # Send the notification
     if is_mute; then
-    	dunstify -i audio-volume-high -t 8 -r 2593 -u normal " 婢 $volume  $bar"
+    	dunstify -i audio-volume-high -r 2593 -u normal " 婢 $volume  $bar"
     else
-    	dunstify -i audio-volume-high -t 8 -r 2593 -u normal " 墳 $volume  $bar" 
+    	dunstify -i audio-volume-high -r 2593 -u normal " 墳 $volume  $bar" 
     fi
 
  }
