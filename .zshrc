@@ -3,17 +3,19 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/home/ekickx/.oh-my-zsh
+export ZSH=/home/ekickx/.config/oh-my-zsh
 
 export TERM=st-256color # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 
-cat ~/.cache/wal/sequences
+color="$HOME/.cache/wal/sequences"
+cat $color
 
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="powerlevel9k/powerlevel9k"
-config="$HOME/.config/ohmyzsh/numberOne"
-source $config
+# ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="awesomepanda"
+# config="$HOME/.config/oh-my-zsh/templates/numberOne"
+# source $config
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -84,9 +86,10 @@ source $ZSH/oh-my-zsh.sh
 # else
 #   export EDITOR='mvim'
 # fi
-if command -v tmux>/dev/null; then
-  [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux
-fi
+# Tmux
+#if command -v tmux>/dev/null; then
+#  [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux
+#fi
 
 
 # Compilation flags
@@ -104,8 +107,8 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias sudo="sudo "
-alias pasang="aptitude install"
-alias hapus="aptitude remove"
+alias pasang="apt install"
+alias hapus="apt remove"
 alias tog="quodlibet --play-pause"
 alias next="quodlibet --next"
 alias prev="quodlibet --previous"
@@ -115,6 +118,7 @@ alias list-list="npm list -g --depth=0"
 alias grview="$HOME/APP/grv/grv -repoFilePath"
 alias infoapps="aptitude show"
 alias cls="colorls"
+alias ps_mem="sudo ps_mem"
 
 plugins=(
   git
@@ -130,7 +134,12 @@ plugins=(
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=10'
 
 
-
 #path
 export PATH=$PATH":$HOME/.commands"
 export PATH=$PATH":$HOME/.local/bin"
+NPM_PREFIX="${HOME}/.local/node"
+
+# mencegah duplikat lokasi node packages
+if [[ -z $(printf $PATH | grep $NPM_PREFIX/bin) ]]; then
+  export PATH="$NPM_PREFIX/bin:$PATH"
+fi
