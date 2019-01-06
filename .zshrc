@@ -1,145 +1,41 @@
+export ZPLUG_HOME=$HOME/.zplug
+cat ~/.cache/wal/sequences
+setopt auto_cd
 
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+# zplug initialization
+[[ ! -f $ZPLUG_HOME/init.zsh ]] && git clone https://github.com/zplug/zplug $ZPLUG_HOME
+source $ZPLUG_HOME/init.zsh
 
-# Path to your oh-my-zsh installation.
-export ZSH=/home/ekickx/.config/oh-my-zsh
+# do self-manage
+zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 
-export TERM=st-256color # Set name of the theme to load. Optionally, if you set this to "random"
-# it'll load a random theme each time that oh-my-zsh is loaded.
+# load nice libs from oh-my-zsh
+zplug "lib/completion",   from:oh-my-zsh
+zplug "lib/history",      from:oh-my-zsh
+zplug "lib/key-bindings", from:oh-my-zsh
+zplug "lib/termsupport", from:oh-my-zsh
+zplug "lib/directories", from:oh-my-zsh
 
-color="$HOME/.cache/wal/sequences"
-cat $color
+# for speed debug. mine ? 230ms, not bad tho
+# zplug "paulmelnikow/zsh-startup-timer"
 
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-# ZSH_THEME="powerlevel9k/powerlevel9k"
-ZSH_THEME="awesomepanda"
-# config="$HOME/.config/oh-my-zsh/templates/numberOne"
-# source $config
+# naisu minimal theme
+PURE_PROMPT_SYMBOL='➜ '
+zplug 'mafredri/zsh-async', from:github
+zplug 'sinetoami/purien', use:purien.zsh, from:github, as:theme
 
-# Set list of themes to load
-# Setting this variable when ZSH_THEME=random
-# cause zsh load theme from this variable instead of
-# looking in ~/.oh-my-zsh/themes/
-# An empty array have no effect
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster")
+# another eyecandy
+zplug 'zdharma/fast-syntax-highlighting', defer:2, hook-load:'FAST_HIGHLIGHT=()'
+zplug 'zsh-users/zsh-autosuggestions'
 
-# Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
+# finally install and load those plugins
+zplug check || zplug install
+zplug load
 
-# Uncomment the following line to use hyphen-insensitive completion. Case
-# sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
+# returning command and folder completion when line is empty
+# like a bash, but better
+blanktab() { [[ $#BUFFER == 0 ]] && CURSOR=3 zle list-choices || zle expand-or-complete }
+zle -N blanktab && bindkey '^I' blanktab
 
-# Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
-
-# Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
-
-# Uncomment the following line to disable colors in ls.
-# DISABLE_LS_COLORS="true"
-
-# Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
-
-# Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
-
-# Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
-
-# Uncomment the following line if you want to disable marking untracked files
-# under VCS as dirty. This makes repository status check for large repositories
-# much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
-
-# Uncomment the following line if you want to change the command execution time
-# stamp shown in the history command output.
-# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# HIST_STAMPS="mm/dd/yyyy"
-
-# Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
-
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(
-  git zsh-autosuggestions zsh-completions
-)
-autoload -U compinit && compinit
-
-source $ZSH/oh-my-zsh.sh
-
-# User configuration
-
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-# Tmux
-#if command -v tmux>/dev/null; then
-#  [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux
-#fi
-
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias sudo="sudo "
-alias pasang="apt install"
-alias hapus="apt remove"
-alias tog="quodlibet --play-pause"
-alias next="quodlibet --next"
-alias prev="quodlibet --previous"
-alias perbarui="sudo aptitude update"
-alias tingkatkan="sudo aptitude safe-upgrade"
-alias list-list="npm list -g --depth=0"
-alias grview="$HOME/APP/grv/grv -repoFilePath"
-alias infoapps="aptitude show"
-alias cls="colorls"
-alias ps_mem="sudo ps_mem"
-
-plugins=(
-  git
-  bundler
-  dotenv
-  osx
-  rake
-  rbenv
-  ruby
-)
-
-#zsh-autosuggestionsSetting
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=10'
-
-
-#path
-export PATH=$PATH":$HOME/.commands"
-export PATH=$PATH":$HOME/.local/bin"
-NPM_PREFIX="${HOME}/.local/node"
-
-# mencegah duplikat lokasi node packages
-if [[ -z $(printf $PATH | grep $NPM_PREFIX/bin) ]]; then
-  export PATH="$NPM_PREFIX/bin:$PATH"
-fi
+# load my own aliases
+[[ -f $HOME/.aliases ]] && source $HOME/.aliases
