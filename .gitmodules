@@ -7,3 +7,9 @@
 [submodule ".config/mpv/scripts/mpv-nextfile"]
 	path = .config/mpv/scripts/mpv-nextfile
 	url = https://github.com/jonniek/mpv-nextfile
+[submodule ".config/oh-my-zsh/custom/themes/powerlevel9k"]
+	path = .config/oh-my-zsh/custom/themes/powerlevel9k
+	url = https://github.com/bhilburn/powerlevel9k/
+[submodule ".config/oh-my-zsh/custom/plugins/zsh-autosuggestions"] 
+	path = .config/oh-my-zsh/custom/plugins/zsh-autosuggestions 
+	url = https://github.com/zsh-users/zsh-autosuggestions 
