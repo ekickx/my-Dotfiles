@@ -1,5 +1,4 @@
 export ZPLUG_HOME=$HOME/.zplug
-cat ~/.cache/wal/sequences
 setopt auto_cd
 
 # zplug initialization
@@ -14,19 +13,20 @@ zplug "lib/completion",   from:oh-my-zsh
 zplug "lib/history",      from:oh-my-zsh
 zplug "lib/key-bindings", from:oh-my-zsh
 zplug "lib/termsupport", from:oh-my-zsh
-zplug "lib/directories", from:oh-my-zsh
 
 # for speed debug. mine ? 230ms, not bad tho
-# zplug "paulmelnikow/zsh-startup-timer"
+zplug "paulmelnikow/zsh-startup-timer"
 
 # naisu minimal theme
-PURE_PROMPT_SYMBOL='➜ '
-zplug 'mafredri/zsh-async', from:github
-zplug 'sinetoami/purien', use:purien.zsh, from:github, as:theme
+# PURE_PROMPT_SYMBOL='➜ '
+# zplug 'mafredri/zsh-async', from:github
+# zplug 'sindresorhus/pure', use:pure.zsh, from:github, as:theme
+# zplug 'tzing/clover.zsh-theme', from:github, as:theme
+zplug denysdovhan/spaceship-prompt, use:spaceship.zsh, from:github, as:theme
 
 # another eyecandy
-zplug 'zdharma/fast-syntax-highlighting', defer:2, hook-load:'FAST_HIGHLIGHT=()'
 zplug 'zsh-users/zsh-autosuggestions'
+# zplug 'zdharma/fast-syntax-highlighting', defer:2, hook-load:'FAST_HIGHLIGHT=()'
 
 # finally install and load those plugins
 zplug check || zplug install
@@ -39,3 +39,13 @@ zle -N blanktab && bindkey '^I' blanktab
 
 # load my own aliases
 [[ -f $HOME/.aliases ]] && source $HOME/.aliases
+
+# Path
+export PATH=$PATH":$HOME/.commands"
+export PATH=$PATH":$HOME/.local/bin"
+NPM_PREFIX="${HOME}/.local/node"
+
+# mencegah duplikat lokasi node packages
+if [[ -z $(printf $PATH | grep $NPM_PREFIX/bin) ]]; then
+  export PATH="$NPM_PREFIX/bin:$PATH"
+fi
