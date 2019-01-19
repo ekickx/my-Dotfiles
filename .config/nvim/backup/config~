@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+# config=~/.config/neofetch/semi-minimal
+# config=~/.config/neofetch/minimal
+config=~/.config/neofetch/minimal2
+# config=~/.config/neofetch/config4
+# config=~/.config/neofetch/config_ori
+# config=~/.config/neofetch/idol
+# config=~/.config/neofetch/pixel
+
+source $config

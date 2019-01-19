@@ -1,0 +1,6 @@
+#!/bin/sh
+pkill dwmstatus
+pkill skippy-xd
+pkill clipit
+pkill battery_monitor.sh
+pkill keynav

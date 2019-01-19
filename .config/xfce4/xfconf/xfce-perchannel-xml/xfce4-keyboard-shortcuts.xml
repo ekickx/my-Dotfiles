@@ -59,7 +59,6 @@
       <property name="&lt;Shift&gt;&lt;Super&gt;Left" type="string" value="/home/ekickx/.commands/moveresize.sh 10 0 -20 0"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;Down" type="string" value="/home/ekickx/.commands/moveresize.sh 0 -10 0 20"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;Up" type="string" value="/home/ekickx/.commands/moveresize.sh 0 10 0 -20"/>
-      <property name="&lt;Shift&gt;&lt;Super&gt;Return" type="string" value="tabbed -c -r 2 st -w &apos;&apos;"/>
       <property name="&lt;Primary&gt;&lt;Super&gt;Left" type="string" value="/home/ekickx/.commands/movemouse.sh -10 0"/>
       <property name="&lt;Primary&gt;&lt;Super&gt;Right" type="string" value="/home/ekickx/.commands/movemouse.sh 10 0"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;Right" type="string" value="/home/ekickx/.commands/moveresize.sh -10 0 20 0"/>
@@ -67,6 +66,7 @@
       <property name="&lt;Primary&gt;&lt;Super&gt;Up" type="string" value="/home/ekickx/.commands/movemouse.sh 0 -10"/>
       <property name="&lt;Alt&gt;&lt;Super&gt;Left" type="string" value="/home/ekickx/.commands/movemouse.sh 0 0 1"/>
       <property name="&lt;Alt&gt;&lt;Super&gt;Right" type="string" value="/home/ekickx/.commands/movemouse.sh 0 0 3"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;Return" type="string" value="zsh -ic st"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

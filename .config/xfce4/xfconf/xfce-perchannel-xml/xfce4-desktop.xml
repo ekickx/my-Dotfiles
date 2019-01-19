@@ -8,7 +8,7 @@
         <property name="color1" type="empty"/>
         <property name="color2" type="empty"/>
         <property name="color-style" type="empty"/>
-        <property name="image-path" type="string" value="/home/ekickx/Pictures/Wallpapers/gif/1980-x-1080-gif-aesthetic-pixel.gif"/>
+        <property name="image-path" type="string" value="/home/ekickx/Pictures/Wallpapers/brigitte-tohm-147669-unsplash.jpg"/>
         <property name="image-show" type="empty"/>
         <property name="last-image" type="empty"/>
         <property name="last-single-image" type="empty"/>
@@ -27,7 +27,7 @@
             <value type="uint" value="65535"/>
           </property>
           <property name="image-style" type="int" value="5"/>
-          <property name="last-image" type="string" value="/home/ekickx/Pictures/Wallpapers/gif/1980-x-1080-gif-aesthetic-pixel.gif"/>
+          <property name="last-image" type="string" value="/home/ekickx/Pictures/Wallpapers/brigitte-tohm-147669-unsplash.jpg"/>
         </property>
         <property name="workspace1" type="empty">
           <property name="color-style" type="int" value="1"/>

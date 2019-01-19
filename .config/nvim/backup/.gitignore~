@@ -1,0 +1,8 @@
+.DS_Store
+Thumbs.db
+db.json
+*.log
+node_modules/
+site/
+.deploy*/
+themes/blue_umi/source/sass/

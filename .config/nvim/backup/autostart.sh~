@@ -1,0 +1,9 @@
+feh --bg-scale ~/Pictures/Wallpapers/gif/1980-x-1080-gif-aesthetic-pixel.gif
+~/.commands/gif.sh ~/Pictures/Wallpapers/gif/1980-x-1080-gif-aesthetic-pixel.gif&
+dwmstatus&
+skippy-xd --start-daemon& 2>/dev/null&
+bash ~/.commands/dunst-run.sh& 2>/dev/null&
+clipit& 2>/dev/null&
+compton --dbus& 2>/dev/null&
+bash ~/.commands/battery_monitor.sh 2>/dev/null&
+keynav&

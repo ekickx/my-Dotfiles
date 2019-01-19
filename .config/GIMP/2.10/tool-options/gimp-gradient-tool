@@ -1,0 +1,12 @@
+# GIMP gimp-gradient-tool options
+
+(foreground (color-rgb 0.749020 0.105882 0.352941))
+(background (color-rgb 0.237584 0.291807 0.318919))
+(opacity 0.608000)
+(gradient "FG to Transparent")
+(brush-size 521.310000)
+(brush-hardness 0.500000)
+(gradient-reverse yes)
+(gradient-type radial)
+
+# end of gimp-gradient-tool options

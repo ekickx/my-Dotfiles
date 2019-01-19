@@ -78,15 +78,15 @@
     <property name="wrap_workspaces" type="bool" value="false"/>
     <property name="zoom_desktop" type="bool" value="true"/>
     <property name="workspace_names" type="array">
-      <value type="string" value="code"/>
-      <value type="string" value="browser"/>
-      <value type="string" value="graphic"/>
-      <value type="string" value="office"/>
-      <value type="string" value="game"/>
+      <value type="string" value="1"/>
+      <value type="string" value="2"/>
+      <value type="string" value="3"/>
+      <value type="string" value="4"/>
+      <value type="string" value="5"/>
     </property>
-    <property name="margin_left" type="int" value="10"/>
-    <property name="margin_right" type="int" value="10"/>
-    <property name="margin_bottom" type="int" value="42"/>
-    <property name="margin_top" type="int" value="10"/>
+    <property name="margin_left" type="int" value="12"/>
+    <property name="margin_right" type="int" value="12"/>
+    <property name="margin_bottom" type="int" value="44"/>
+    <property name="margin_top" type="int" value="12"/>
   </property>
 </channel>

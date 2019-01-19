@@ -1,0 +1,9 @@
+---
+title: Hello Itou Miku
+date: 2018-12-20 16:19:26
+tags: [tag2, tag1]
+header_img: header.jpeg
+categoories:
+  - [japanfilia]
+---
+{% asset_img header.jpeg %}
