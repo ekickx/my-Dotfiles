@@ -1,0 +1,10 @@
+#!/bin/bash
+
+source ~/.commands/thegen/tint2/launchy.tint2rc
+source ~/.commands/thegen/tint2/minima.tint2rc
+source ~/.commands/thegen/tint2/unleashed-workspace.tint2rc
+
+pkill tint2
+launchy &
+minima &
+workspace &

@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Numix</name>
+    <name>warna</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -123,10 +123,14 @@
     <number>4</number>
     <firstdesk>1</firstdesk>
     <names>
-      <!-- set names up here if you want to, like this:
-    <name>desktop 1</name>
-    <name>desktop 2</name>
-    -->
+      <name>1</name>
+      <name>2</name>
+      <name>3</name>
+      <name>4</name>
+      <name>5</name>
+      <name>6</name>
+      <name>7</name>
+      <name>8</name>
     </names>
     <popupTime>875</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -153,10 +157,10 @@
      Many programs reserve space automatically, but you can use this in other
      cases. -->
   <margins>
-    <top>0</top>
-    <bottom>0</bottom>
-    <left>0</left>
-    <right>0</right>
+    <top>12</top>
+    <bottom>30</bottom>
+    <left>52</left>
+    <right>12</right>
   </margins>
   <dock>
     <position>TopLeft</position>
@@ -247,7 +251,7 @@
         <to>4</to>
       </action>
     </keybind>
-    <keybind key="W-d">
+    <keybind key="W-S-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
     <!-- Keybindings for windows -->
@@ -264,15 +268,63 @@
         <menu>client-menu</menu>
       </action>
     </keybind>
-    <!-- Take a screenshot of the current window with scrot when Alt+Print are pressed -->
-    <keybind key="A-Print">
-      <action name="Execute">
-        <command>scrot -s</command>
+    <keybind key="W-S-s">
+      <action name="ToggleMaximize"/>
+    </keybind>
+    <keybind key="W-q">
+      <action name="MoveResizeTo">
+        <x/>
+        <y/>
+        <height>49%</height>
+        <width>50%</width>
       </action>
     </keybind>
-    <keybind key="Print">
-      <action name="Execute">
-        <command>scrot -q 97 -e 'mv $f ~/Pictures/Scrot/'</command>
+    <keybind key="W-e">
+      <action name="MoveResizeTo">
+        <x>-0%</x>
+        <y/>
+        <height>49%</height>
+        <width>49%</width>
+      </action>
+    </keybind>
+    <keybind key="W-z">
+      <action name="MoveResizeTo">
+        <x>0%</x>
+        <y>-0%</y>
+        <height>49%</height>
+        <width>50%</width>
+      </action>
+    </keybind>
+    <keybind key="W-c">
+      <action name="MoveResizeTo">
+        <x>-0%</x>
+        <y>-0%</y>
+        <height>49%</height>
+        <width>49%</width>
+      </action>
+    </keybind>
+    <keybind key="W-a">
+      <action name="MoveResizeTo">
+        <x/>
+        <y/>
+        <height>100%</height>
+        <width>50%</width>
+      </action>
+    </keybind>
+    <keybind key="W-d">
+      <action name="MoveResizeTo">
+        <x>-0%</x>
+        <y/>
+        <height>100%</height>
+        <width>49%</width>
+      </action>
+    </keybind>
+    <keybind key="W-s">
+      <action name="MoveResizeTo">
+        <x>center</x>
+        <y>center</y>
+        <height>70%</height>
+        <width>62%</width>
       </action>
     </keybind>
     <!-- Keybindings for window switching -->
@@ -305,41 +357,66 @@
         </finalactions>
       </action>
     </keybind>
-    <!-- Keybindings for window switching with the arrow keys -->
-    <keybind key="W-S-Right">
-      <action name="DirectionalCycleWindows">
-        <direction>right</direction>
-      </action>
-    </keybind>
-    <keybind key="W-S-Left">
-      <action name="DirectionalCycleWindows">
-        <direction>left</direction>
-      </action>
-    </keybind>
-    <keybind key="W-S-Up">
-      <action name="DirectionalCycleWindows">
-        <direction>up</direction>
-      </action>
-    </keybind>
-    <keybind key="W-S-Down">
-      <action name="DirectionalCycleWindows">
-        <direction>down</direction>
-      </action>
-    </keybind>
     <!-- Keybindings for running applications -->
-    <keybind key="W-e">
+    <!-- <keybind key="W-e"> -->
+    <!--   <action name="Execute"> -->
+    <!--     <startupnotify> -->
+    <!--       <enabled>true</enabled> -->
+    <!--       <name>Konqueror</name> -->
+    <!--     </startupnotify> -->
+    <!--     <command>kfmclient openProfile filemanagement</command> -->
+    <!--   </action> -->
+    <!-- </keybind> -->
+    <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Konqueror</name>
-        </startupnotify>
-        <command>kfmclient openProfile filemanagement</command>
+        <command>bash ~/.commands/volume.sh down</command>
       </action>
     </keybind>
-    <keybind key="A-r">
-    	<action name="Execute">
-    		<command>rofi -modi -show drun</command>
-    	</action>
+    <keybind key="XF86AudioMute">
+      <action name="Execute">
+        <command>bash ~/.commands/volume.sh mute</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioRaiseVolume">
+      <action name="Execute">
+        <command>bash ~/.commands/volume.sh up</command>
+      </action>
+    </keybind>
+    <keybind key="XF86MonBrightnessUp">
+      <action name="Execute">
+        <command>bash ~/.commands/brightness.sh up</command>
+      </action>
+    </keybind>
+    <keybind key="XF86MonBrightnessDown">
+      <action name="Execute">
+        <command>bash ~/.commands/brightness.sh down</command>
+      </action>
+    </keybind>
+    <keybind key="W-t">
+      <action name="Execute">
+        <command>tabbed -c -r 2 st -w ''</command>
+      </action>
+    </keybind>
+    <keybind key="W-S-t">
+      <action name="Execute">
+        <command>thunar</command>
+      </action>
+    </keybind>
+    <!-- <keybind key="Super_L"> -->
+    <!--   <action name="Execute"> -->
+    <!--     <command>bash ~/.commands/rofi-widget/rofi-sidebar</command> -->
+    <!--   </action> -->
+    <!-- </keybind> -->
+    <!-- Taking screenshot when Print is pressed -->
+    <keybind key="Print">
+      <action name="Execute">
+        <command>bash ~/.commands/rofi-widget/screenshot.sh scr</command>
+      </action>
+    </keybind>
+    <keybind key="C-Print">
+      <action name="Execute">
+        <command>bash ~/.commands/rofi-widget/screenshot.sh area</command>
+      </action>
     </keybind>
   </keyboard>
   <mouse>
@@ -732,7 +809,7 @@
   # order that they appear in this list
 
 
-    # each rule element can be left out or set to 'default' to specify to not 
+    # each rule element can be left out or set to 'default' to specify to not
     # change that attribute of the window
 
     <decor>yes</decor>
